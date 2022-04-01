@@ -1,0 +1,78 @@
+/* Hearder */
+*{
+ font-family: "roboto";
+}
+.logo{
+   padding-top: 20px;
+   display: flex;
+   justify-content: center;
+  }
+  .logo> img{
+   width: 150px;
+   height:30px;
+  }
+.reserve{
+ background-color: #f2f2f2;
+ width: 100%;
+ height: 250px;
+}
+.paris{
+ width: 100%;
+ height: 40px;
+ background-color: lightgray;
+ border-top: 0.5px solid gray;
+}
+.center{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.disflex{
+  display: flex;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.grey{
+ color: grey;
+}
+.explore{
+ width: 65%;
+ height: 40px;
+ background: $primary;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 20px 20px 20px 20px;
+ margin-left: 50px;
+}
+.white{
+ color: white;
+}
+.boxE {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0 0 10px rgb(203, 209, 214);
+ border-color: #f2f2f2;
+ width: 80%;
+ height: 55px;
+ margin-left: 30px;
+ border-radius: 20px 20px 20px 20px;
+ margin-bottom: 10px;
+}
+.btn{
+ width:20px;
+ height: 20px;
+ border-radius: 10px;
+ background-color: $primary;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: -7px;
+}
+/*section*/
+.restaurant{
+  width:100%;
+  height: 300px;
+  background-color: $grey;
+}
