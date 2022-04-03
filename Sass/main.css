@@ -47,8 +47,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
 .grey {
@@ -111,12 +110,139 @@
       -ms-flex-align: center;
           align-items: center;
   position: -7px;
+  position: relative;
+  right: 40px;
 }
 
 /*section*/
 .restaurant {
   width: 100%;
-  height: 300px;
-  background-color: lightgray;
+  height: 1200px;
+  padding-top: 0.3px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+}
+
+.carte {
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: 0 0 16px lightslategrey;
+          box-shadow: 0 0 16px lightslategrey;
+  width: 90%;
+  height: 250px;
+}
+
+.carte img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carte_new {
+  font-size: 0.8em;
+  color: green;
+  position: absolute;
+  top: 80%;
+  left: 68%;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 80px;
+}
+
+.carte h3,
+.carte p {
+  margin: 0.1px;
+  padding-left: 5%;
+}
+
+.flexBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carte_like {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 26px;
+  padding-top: 5px;
+  padding-right: 10px;
+  font-size: 26px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #262020;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+
+a:hover {
+  color: blue;
+}
+
+.footer_titre {
+  font-family: "shrikhand";
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.footer_column {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 15px;
+  padding-top: 10px;
+  gap: 7px;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

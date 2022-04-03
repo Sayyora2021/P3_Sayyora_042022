@@ -1,7 +1,21 @@
-@mixin flexMid{
+@mixin fond-color{
+ background-color: #f2f2f2;
+}
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+@mixin display {
  display: flex;
- justify-content: center;
- align-items: center;
- box-shadow: 0 0 16px lightslategrey;
- border-color: blanchedalmond;
- }
+ padding-left: 10px;
+}
+@mixin carte_font{
+ background-color: white;
+}
+@mixin flexColumn{
+display: flex;
+flex-direction: column;
+
+}
