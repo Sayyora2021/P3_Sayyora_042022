@@ -17,5 +17,13 @@
 @mixin flexColumn{
 display: flex;
 flex-direction: column;
-
+}
+@mixin box_shadow{
+  box-shadow: 0px 3px 10px -7px black;
+}
+@mixin flexBetween{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }

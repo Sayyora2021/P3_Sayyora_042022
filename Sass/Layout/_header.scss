@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
  }
 
 .disflex{
@@ -39,7 +40,8 @@
 .explore{
  width: 65%;
  height: 40px;
- background: $primary;
+ background: linear-gradient(0deg, #9356DC, #FF79DA);
+ @include box_shadow;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -53,8 +55,9 @@
  display: flex;
  justify-content: center;
  align-items: center;
- box-shadow: 0 0 10px rgb(203, 209, 214);
- border-color: #f2f2f2;
+ @include box_shadow;
+ background-color: $white_color;
+ border-color: lightgray;
  width: 80%;
  height: 55px;
  margin-left: 30px;
@@ -62,14 +65,25 @@
  margin-bottom: 10px;
 }
 .btn{
- width:20px;
- height: 20px;
- border-radius: 10px;
+ width: 25px;
+ height: 25px;
+ border-radius: 20px;
+ color:$white;
  background-color: $primary;
  display: flex;
  justify-content: center;
  align-items: center;
- position: -7px;
  position: relative;
  right: 40px;
+}
+.boxE_texte{
+  @include flexBetween;
+  width:75%;
+ }
+ .icone{
+  display: flex;
+  padding-right: 25px;
+  }
+.icone:hover{
+  color: $primary;
 }
