@@ -67,21 +67,63 @@ flex-direction: column;
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   padding-bottom: 10px;
+  font-weight: initial;
+  color: gray;
  }
- .boxE {
+ .box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  @include box_shadow;
+    @include box_shadow;
+  @include flexColumn;
   background-color: $white;
   border-color: lightgray;
   width: 80%;
-  height: 55px;
-  margin-left: 30px;
+  height: 65px;
+  margin-left: 5px;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 10px;
-  width: 90%;
-  margin: 0;
+  width: 95%;
   padding: 0;
   box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 10px;
+  gap:2px;
+ }
+ 
+.box h4{
+  margin: 0.1px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.box p{
+  color: gray;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 7px;
+}
+.flexBetween{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.commande{
+  width: 217px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  @include box_shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+ }
+ .btn_commande{
+   align-self: center;
+   color: #FFF;
+   text-decoration: none;
  }

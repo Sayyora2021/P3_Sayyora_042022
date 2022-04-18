@@ -393,9 +393,77 @@ a:hover {
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   padding-bottom: 10px;
+  font-weight: initial;
+  color: gray;
 }
 
-.boxE {
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 3px 10px -7px black;
+          box-shadow: 0px 3px 10px -7px black;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-color: lightgray;
+  width: 80%;
+  height: 65px;
+  margin-left: 5px;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 10px;
+  width: 95%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 10px;
+  gap: 2px;
+}
+
+.box h4 {
+  margin: 0.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.box p {
+  color: gray;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 7px;
+}
+
+.flexBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commande {
+  width: 217px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 3px 10px -7px black;
+          box-shadow: 0px 3px 10px -7px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,19 +473,16 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 3px 10px -7px black;
-          box-shadow: 0px 3px 10px -7px black;
-  background-color: white;
-  border-color: lightgray;
-  width: 80%;
-  height: 55px;
-  margin-left: 30px;
-  border-radius: 20px 20px 20px 20px;
-  margin-bottom: 10px;
-  width: 90%;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  border-radius: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.btn_commande {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #FFF;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
