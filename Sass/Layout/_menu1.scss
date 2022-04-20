@@ -33,10 +33,7 @@
 }
 .menu_carte{
  width: 100%;
- width: 100%;
-padding-bottom: 84px;
-border-radius: 40px 40px 0 0;
-height: 1200px;
+ border-radius: 40px 40px 0 0;
 box-sizing: border-box;
 position: relative;
 top: -90px;
@@ -121,9 +118,41 @@ flex-direction: column;
   border-radius: 25px;
   margin-left: 50px;
   margin-top: 20px;
+  margin-bottom: 30px;
  }
  .btn_commande{
    align-self: center;
    color: #FFF;
    text-decoration: none;
  }
+ /*footer*/
+ .footer{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(38, 32, 32);
+ }
+ .footer a{
+  text-decoration: none;
+  color: $white;
+  padding-left: 10px;
+ }
+ a:hover{
+  color: $tertiaire;
+ }
+ .footer_titre{
+  font-family: "shrikhand";
+  color: white;
+  @include display;
+  font-size: 20px;
+  padding-top: 20px;
+  }
+  .footer_column{
+   color: $white;
+   @include flexColumn;
+   padding-left: 15px;
+   padding-top: 10px;
+   gap:7px;
+  }
+  .display{
+   display: flex;
+  }
