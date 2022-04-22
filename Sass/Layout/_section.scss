@@ -55,7 +55,6 @@ h1{
   font-weight: normal;
 }
 .carte_like::before{
-  font-weight: bold;
   transition:color 1s ease-out;
 }
 .carte_like:hover::before{

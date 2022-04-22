@@ -238,7 +238,6 @@ h1 {
 }
 
 .carte_like::before {
-  font-weight: bold;
   -webkit-transition: color 1s ease-out;
   transition: color 1s ease-out;
 }
