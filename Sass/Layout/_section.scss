@@ -50,12 +50,19 @@ h1{
   height: 30px;
   position: absolute;
   right:26px;
-  padding-top: 5px;
-  padding-right: 10px;
+  padding-top: 10px;
   font-size: 26px;
-  color:#FFF;
-  border-color: 2px solid black;
+  font-weight: normal;
+}
+.carte_like::before{
+  font-weight: bold;
+  transition:color 1s ease-out;
+}
+.carte_like:hover::before{
+  color:$primary;
+  cursor: pointer;
 }
 .carte_like:hover{
+  font-weight: bold;
   color: $primary;
-  }
+}
