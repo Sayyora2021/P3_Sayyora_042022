@@ -7,6 +7,8 @@
 }
 .fleche{
   @include center;
+  padding-left: 10px;
+  @include none;
  }
 
 .logo{
@@ -67,6 +69,9 @@ flex-direction: column;
   font-weight: initial;
   color: gray;
  }
+ .centrer{
+   texte
+ }
  .box {
   display: flex;
     @include box_shadow;
@@ -109,15 +114,22 @@ flex-direction: column;
   justify-content: space-between;
 }
 .check{
-  width:40px;
+  width:50px;
   height:100%;
-  background-color: #99E2D0;
+  background-color:$tertiaire;
   position: absolute;
   right: -20px;
   bottom: 0;
   display: flex;
   justify-content: right;
   border-radius:   0 20px 20px 0;
+}
+.check::before{
+  
+  transition: transform 500ms ease-in-out;
+}
+.check:hover::before{
+  cursor: pointer;
 }
 .round_check{
 width: 20px;
@@ -128,9 +140,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: absolute;
-top: 18px;
-right: 10px;
-color: #99E2D0;
+top: 20px;
+right: 15px;
+color:$tertiaire;
 }
 .commande{
   width: 217px;
@@ -160,9 +172,6 @@ color: #99E2D0;
   text-decoration: none;
   color: $white;
   padding-left: 10px;
- }
- a:hover{
-  color: $tertiaire;
  }
  .footer_titre{
   font-family: "shrikhand";
