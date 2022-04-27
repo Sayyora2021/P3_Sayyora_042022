@@ -119,20 +119,21 @@ flex-direction: column;
   width:50px;
   height:65px;
   background-color:$tertiaire;
-  position: relative;
-  left: 350px;
-  bottom: 75px;
+  position: absolute;
+  right:7px;
   display: flex;
   justify-content: right;
   border-radius:   0 20px 20px 0;
  overflow: hidden;
- transition: transform 330ms ease-in-out;
+ }
+ .btn_check:hover{
+   transition: transform 330ms ease-in-out;
+ }
+.check{
+  transition: translate(100%);
+  cursor:pointer;
 }
 
-.check:hover:{
-  transform: translate (150px, -7vh);
-  cursor: pointer;
-}
 
 .round_check{
 width: 20px;
@@ -150,7 +151,7 @@ color:$tertiaire;
 .commande{
   width: 217px;
   height: 50px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(355deg,#FF79DA, #9356DC);
   @include box_shadow;
   display: flex;
   justify-content: center;
@@ -158,6 +159,10 @@ color:$tertiaire;
   border-radius: 25px;
   margin-top: 20px;
   margin-bottom: 30px;
+ }
+ .commande:hover{
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  cursor:pointer;
  }
  .btn_commande{
    align-self: center;

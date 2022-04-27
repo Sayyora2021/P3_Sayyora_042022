@@ -419,6 +419,12 @@ template {
   border-radius: 20px 20px 20px 20px;
 }
 
+.explore:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  cursor: pointer;
+}
+
 .btn_explore {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -841,9 +847,8 @@ a:hover {
   width: 50px;
   height: 65px;
   background-color: #99E2D0;
-  position: relative;
-  left: 350px;
-  bottom: 75px;
+  position: absolute;
+  right: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,21 +859,17 @@ a:hover {
   overflow: hidden;
 }
 
-.check::before {
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+.btn_check:hover {
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
 }
 
-.check:hover::before {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+.check {
+  -webkit-transition: translate(100%);
+  transition: translate(100%);
   cursor: pointer;
-}
-
-.check:hover {
-  color: #99E2D0;
 }
 
 .round_check {
@@ -894,8 +895,7 @@ a:hover {
 .commande {
   width: 217px;
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(355deg, #FF79DA, #9356DC);
   -webkit-box-shadow: 0px 3px 10px -7px black;
           box-shadow: 0px 3px 10px -7px black;
   display: -webkit-box;
@@ -910,6 +910,12 @@ a:hover {
   border-radius: 25px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.commande:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  cursor: pointer;
 }
 
 .btn_commande {

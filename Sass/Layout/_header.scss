@@ -50,6 +50,10 @@
  align-items: center;
  border-radius: 20px 20px 20px 20px;
 }
+.explore:hover{
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  cursor:pointer;
+}
 .btn_explore{
   align-self: center;
   color: #FFF;
