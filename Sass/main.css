@@ -452,7 +452,7 @@ h2 {
   background-color: #f2f2f2;
   border-color: lightgray;
   width: 80%;
-  height: 55px;
+  height: 65px;
   margin-left: 15px;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 10px;
@@ -619,25 +619,20 @@ h1 {
   padding-top: 10px;
   font-size: 26px;
   font-weight: normal;
-}
-
-.carte_like::before {
-  -webkit-transition: color 1s ease-out;
-  transition: color 1s ease-out;
-}
-
-.carte_like:focus {
-  color: #9356DC;
-}
-
-.carte_like:hover::before {
-  color: #9356DC;
   cursor: pointer;
 }
 
 .carte_like:hover {
-  font-weight: bold;
   color: #9356DC;
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+  background: linear-gradient(355deg, #FF79DA, #9356DC);
+  background-clip: text;
+  font-weight: bold;
+}
+
+.carte_like i::before {
+  display: inline;
 }
 
 .footer {
@@ -856,9 +851,6 @@ a:hover {
 .box p {
   color: gray;
   margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   padding-right: 7px;
 }
 
@@ -875,22 +867,18 @@ a:hover {
           justify-content: space-between;
 }
 
-.moves_price {
-  position: relative;
-}
-
 .price {
   position: absolute;
   right: 5px;
 }
 
-.moves_price:hover > .price {
+.box:hover .price {
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
 .check {
@@ -1025,5 +1013,12 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.description {
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=main.css.map */

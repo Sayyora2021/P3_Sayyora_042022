@@ -67,18 +67,17 @@ h1{
   padding-top: 10px;
   font-size: 26px;
   font-weight: normal;
-}
-.carte_like::before{
-  transition:color 1s ease-out;
- }
- .carte_like:focus{
-   color: $primary;
- }
-.carte_like:hover::before{
-  color:$primary;
   cursor: pointer;
 }
+
 .carte_like:hover{
-  font-weight: bold;
   color: $primary;
+  transition:color 1s ease-out;
+  background: linear-gradient(355deg,#FF79DA, #9356DC);
+  background-clip: text;
+  font-weight: bold;
+}
+.carte_like i::before{
+  display: inline;
+
 }
