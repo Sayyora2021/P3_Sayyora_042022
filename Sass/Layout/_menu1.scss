@@ -92,6 +92,7 @@ flex-direction: column;
   padding-top: 10px;
   gap:2px;
   position: relative;
+  overflow: hidden;
  }
  
 .box h4{
@@ -115,25 +116,40 @@ flex-direction: column;
   flex-direction:row;
   justify-content: space-between;
 }
+.moves_price{
+  position: relative;
+  
+}
+
+.price{
+  position: absolute;
+  right:5px;
+}
+.moves_price:hover>.price{
+  transition: transform 500ms ease-in-out;
+  transform:translateX(-5px);
+}
 .check{
   width:50px;
   height:65px;
   background-color:$tertiaire;
   position: absolute;
-  right:7px;
+  right:-50px;
+  top:0px;
   display: flex;
   justify-content: right;
   border-radius:   0 20px 20px 0;
- overflow: hidden;
- }
- .btn_check:hover{
-   transition: transform 330ms ease-in-out;
- }
-.check{
-  transition: translate(100%);
   cursor:pointer;
-}
+ }
+ .box:hover>.check{
+   transition: transform 330ms ease-in-out;
+   transform:translateX(-50px);
+ }
 
+.box:hover .round_check{
+  transition:transform 330ms ease-in-out;
+  transform: rotate(360deg);
+}
 
 .round_check{
 width: 20px;
@@ -147,6 +163,7 @@ position: absolute;
 top: 20px;
 right: 15px;
 color:$tertiaire;
+font-size: 10px;
 }
 .commande{
   width: 217px;

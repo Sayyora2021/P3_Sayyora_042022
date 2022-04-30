@@ -24,8 +24,19 @@ h1{
     object-fit: cover;  
    }
 }
-.gap{
+.centrer_gap{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   gap:10px;
+}
+.centrer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row_desktop{
+  display: none;
 }
 .carte_new{
   font-size: 0.8em;
@@ -59,7 +70,10 @@ h1{
 }
 .carte_like::before{
   transition:color 1s ease-out;
-}
+ }
+ .carte_like:focus{
+   color: $primary;
+ }
 .carte_like:hover::before{
   color:$primary;
   cursor: pointer;

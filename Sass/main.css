@@ -420,8 +420,8 @@ template {
 }
 
 .explore:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
   cursor: pointer;
 }
 
@@ -474,7 +474,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  right: 90px;
+  right: 80px;
 }
 
 .boxE_texte {
@@ -544,8 +544,35 @@ h1 {
      object-fit: cover;
 }
 
-.gap {
+.centrer_gap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
+}
+
+.centrer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row_desktop {
+  display: none;
 }
 
 .carte_new {
@@ -597,6 +624,10 @@ h1 {
 .carte_like::before {
   -webkit-transition: color 1s ease-out;
   transition: color 1s ease-out;
+}
+
+.carte_like:focus {
+  color: #9356DC;
 }
 
 .carte_like:hover::before {
@@ -808,6 +839,7 @@ a:hover {
   padding-top: 10px;
   gap: 2px;
   position: relative;
+  overflow: hidden;
 }
 
 .box h4 {
@@ -843,12 +875,31 @@ a:hover {
           justify-content: space-between;
 }
 
+.moves_price {
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  right: 5px;
+}
+
+.moves_price:hover > .price {
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
 .check {
   width: 50px;
   height: 65px;
   background-color: #99E2D0;
   position: absolute;
-  right: 7px;
+  right: -50px;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,20 +907,25 @@ a:hover {
       -ms-flex-pack: right;
           justify-content: right;
   border-radius: 0 20px 20px 0;
-  overflow: hidden;
+  cursor: pointer;
 }
 
-.btn_check:hover {
+.box:hover > .check {
   -webkit-transition: -webkit-transform 330ms ease-in-out;
   transition: -webkit-transform 330ms ease-in-out;
   transition: transform 330ms ease-in-out;
   transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 
-.check {
-  -webkit-transition: translate(100%);
-  transition: translate(100%);
-  cursor: pointer;
+.box:hover .round_check {
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .round_check {
@@ -890,6 +946,7 @@ a:hover {
   top: 20px;
   right: 15px;
   color: #99E2D0;
+  font-size: 10px;
 }
 
 .commande {

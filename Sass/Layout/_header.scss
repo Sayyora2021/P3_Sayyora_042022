@@ -51,7 +51,7 @@
  border-radius: 20px 20px 20px 20px;
 }
 .explore:hover{
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg,#FF79DA, #9356DC);
   cursor:pointer;
 }
 .btn_explore{
@@ -85,7 +85,7 @@ h2{
  justify-content: center;
  align-items: center;
  position: relative;
- right: 90px;
+ right: 80px;
 }
 .boxE_texte{
   @include flexBetween;
