@@ -1,4 +1,4 @@
-/*menu2*/
+/*menu3*/
 .nav{
  display: flex;
  flex-direction: row;
@@ -22,13 +22,13 @@
  width: 150px;
  height:25px;
 }
-.menu2{
+.menu3{
  height: 217px;
  margin:0;
  padding: 0;
-   .menu2_img{
+   .menu3_img{
  width:100%;
- height: 210px;
+ height: 260px;
  object-fit: cover;
  text-align: center;
 }
@@ -38,7 +38,7 @@
  border-radius: 40px 40px 0 0;
 box-sizing: border-box;
 position: relative;
-margin-top: -60px;
+margin-top: -10px;
 display: flex;
 flex-direction: column;
  @include fond-color;
