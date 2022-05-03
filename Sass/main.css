@@ -576,7 +576,7 @@ h1 {
      object-fit: cover;
 }
 
-.centrer_gap {
+.gap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,8 +590,21 @@ h1 {
   gap: 10px;
 }
 
+.flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  width: 100%;
+  gap: 10px;
+}
+
 @media screen and (min-width: 992px) {
-  .centrer_gap {
+  .flexRow {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
