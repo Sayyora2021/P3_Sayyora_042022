@@ -70,11 +70,6 @@ flex-direction: column;
   font-weight: initial;
   color: gray;
  }
- .centrer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
  .box {
   display: flex;
     @include box_shadow;
