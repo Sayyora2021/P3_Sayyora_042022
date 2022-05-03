@@ -3,6 +3,12 @@
 *{
   font-family: "roboto";
 }
+body{
+  width:100%;
+  margin: auto;
+  max-width: 1920px;
+  
+}
 .logo{
    padding-top: 10px;
    display: flex;
@@ -49,6 +55,7 @@
  justify-content: center;
  align-items: center;
  border-radius: 20px 20px 20px 20px;
+ width:200px;
 }
 .explore:hover{
   background: linear-gradient(#FF79DA, #9356DC);
@@ -67,7 +74,7 @@ h2{
   flex-direction: column;
   align-items: center;
   @include tablette;
-  margin:20px;
+  margin:10px;
 }
 
 .boxE {

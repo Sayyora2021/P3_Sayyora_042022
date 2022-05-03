@@ -2,12 +2,12 @@
 .nav{
  display: flex;
  flex-direction: row;
- width:70%;
- justify-content: space-between;
+ justify-content: center;
 }
 .fleche{
-  @include center;
-  padding-left: 10px;
+  position:absolute;
+  top:10px;
+  left:5px;
   @include none;
  }
 
@@ -16,7 +16,7 @@
  display: flex;
  justify-content: center;
  padding-bottom: 10px;
- text-align:center;
+ position:static;
 }
 .logo> img{
  width: 150px;
@@ -28,7 +28,7 @@
  padding: 0;
    .menu1_img{
  width:100%;
- height: 210px;
+ height: 190px;
  object-fit: cover;
  text-align: center;
 }
@@ -76,12 +76,11 @@ flex-direction: column;
   @include flexColumn;
   background-color: $white;
   border-color: lightgray;
-  width: 80%;
+  width: 100%;
   height: 65px;
   margin-left: 5px;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 10px;
-  width: 95%;
   padding: 0;
   box-sizing: border-box;
   padding-left: 10px;
@@ -156,6 +155,11 @@ top: 20px;
 right: 15px;
 color:$tertiaire;
 font-size: 10px;
+}
+.middle{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .commande{
   width: 217px;
