@@ -47,7 +47,7 @@ body{
  color: grey;
 }
 .explore{
- margin:60px;
+ margin:30px;
  height: 40px;
  background: linear-gradient(355deg, #9356DC, #FF79DA);
  @include box_shadow;
@@ -101,11 +101,13 @@ h2{
  align-items: center;
  position: relative;
  right: 75px;
- @include tablette;
+ @media screen and (min-width:$tablette){
  right:20px;
 }
+ }
 .boxE_texte{
   @include flexBetween;
+  width:80%;
 }
  .icone{
   display: flex;

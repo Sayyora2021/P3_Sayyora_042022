@@ -13,24 +13,36 @@ h1{
 .carte{
   border-radius: 20px 20px 20px 20px;
   @include box_shadow;
-  width: 90%;
   height: 250px; 
   position: relative;
   @include none;
- img{
+  min-width: 22rem;
+  @media screen and (min-width:$tablette){
+ min-width: 28rem;;
+}
+}
+ .carte img{
   width: 100%;
     border-radius: 20px 20px 0 0;
     height: 80%;
     object-fit: cover;  
-   }
+   
 }
+
 .gap{
   display:flex;
   flex-direction: column;
   align-items: center;
   gap:10px;
-@include tablette;
-margin:10px;
+  
+  @media screen and (min-width:$tablette){
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap:20px;
+  margin:10px;
+ flex-wrap: wrap;
+}
 }
 
 
