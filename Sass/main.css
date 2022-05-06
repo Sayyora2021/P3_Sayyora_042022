@@ -410,7 +410,7 @@ body {
 .explore {
   margin: 30px;
   height: 40px;
-  background: linear-gradient(355deg, #9356DC, #FF79DA);
+  background: linear-gradient(355deg, #8047c4, #FF79DA);
   -webkit-box-shadow: 0px 3px 10px -7px black;
           box-shadow: 0px 3px 10px -7px black;
   display: -webkit-box;
@@ -655,28 +655,30 @@ h1 {
           justify-content: space-between;
 }
 
-.carte_like {
-  width: 30px;
-  height: 30px;
+.like {
+  font-size: 2rem;
   position: absolute;
-  right: 26px;
-  padding-top: 10px;
-  font-size: 26px;
-  font-weight: normal;
+  right: 1rem;
+  bottom: 5px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.full {
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
-}
-
-.carte_like:hover {
-  color: #9356DC;
-  -webkit-transition: color 1s ease-out;
-  transition: color 1s ease-out;
-  background: linear-gradient(355deg, #FF79DA, #9356DC);
   background-clip: text;
-  font-weight: bold;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
-.carte_like i::before {
-  display: inline;
+.carte:hover .full {
+  opacity: 1;
+  -webkit-transform: translateY(-5px) scale(1.2);
+          transform: translateY(-5px) scale(1.2);
 }
 
 .footer {
@@ -691,8 +693,8 @@ h1 {
   padding-left: 10px;
 }
 
-a:hover {
-  color: darkblue;
+.footer a:hover {
+  color: blue;
 }
 
 .footer_titre {

@@ -67,25 +67,23 @@ h1{
   display: flex;
   justify-content: space-between;
 }
-.carte_like{
-  width:30px;
-  height: 30px;
-  position: absolute;
-  right:26px;
-  padding-top: 10px;
-  font-size: 26px;
-  font-weight: normal;
-  cursor: pointer;
+.like{
+  font-size:2rem;
+  position:absolute;
+  right:1rem;
+  bottom:5px;
+  transform:translateY(-5px);
 }
-
-.carte_like:hover{
-  color: $primary;
-  transition:color 1s ease-out;
-  background: linear-gradient(355deg,#FF79DA, #9356DC);
+.full{
+  color:transparent;
+  @include gradient;
   background-clip: text;
-  font-weight: bold;
+  opacity:0;
+  transition: all 200ms ease-in-out;
 }
-.carte_like i::before{
-  display: inline;
+.carte:hover .full{
+  opacity:1;
+  transform:translateY(-5px) scale(1.2);
+}
 
-}
+

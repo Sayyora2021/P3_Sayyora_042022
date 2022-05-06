@@ -49,17 +49,18 @@ body{
 .explore{
  margin:30px;
  height: 40px;
- background: linear-gradient(355deg, #9356DC, #FF79DA);
+ background: linear-gradient(355deg, #8047c4, #FF79DA);
  @include box_shadow;
  display: flex;
  justify-content: center;
  align-items: center;
  border-radius: 20px 20px 20px 20px;
  width:200px;
-}
+ 
+ }
 .explore:hover{
-  background: linear-gradient(#FF79DA, #9356DC);
-  cursor:pointer;
+  @include gradient;
+  
 }
 .btn_explore{
   align-self: center;

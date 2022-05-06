@@ -37,3 +37,7 @@ flex-direction: column;
     flex-direction: row;
   }
 }
+@mixin gradient{
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor:pointer;
+}
