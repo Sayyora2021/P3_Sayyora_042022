@@ -103,17 +103,21 @@ flex-direction: column;
   margin: 0;
   padding-right: 7px;
 }
-.flexBetween{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
+.texte-trsm{
+ width:65%;
+overflow: hidden;
+h4,
+P{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
 }
-
+}
 
 .price{
   position: absolute;
   right:5px;
-  
+  bottom:15px;
 }
 .box:hover .price{
   transition: transform 500ms ease-in-out;

@@ -878,22 +878,22 @@ h1 {
   padding-right: 7px;
 }
 
-.flexBetween {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.texte-trsm {
+  width: 65%;
+  overflow: hidden;
+}
+
+.texte-trsm h4,
+.texte-trsm P {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .price {
   position: absolute;
   right: 5px;
+  bottom: 15px;
 }
 
 .box:hover .price {
