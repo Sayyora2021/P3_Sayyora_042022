@@ -184,7 +184,10 @@ font-size: 10px;
  .btn_commande{
    align-self: center;
    color: #FFF;
-   text-decoration: none;
+ }
+ .middle:hover .commande{
+  opacity:1;
+  transform:translateY(-5px) scale(1.2);
  }
  /*footer*/
  .footer{

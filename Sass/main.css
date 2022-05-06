@@ -423,7 +423,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px 20px 20px 20px;
-  width: 200px;
+  width: 250px;
 }
 
 .explore:hover {
@@ -432,12 +432,17 @@ body {
   cursor: pointer;
 }
 
+.middle:hover .explore {
+  opacity: 1;
+  -webkit-transform: translateY(-5px) scale(1.2);
+          transform: translateY(-5px) scale(1.2);
+}
+
 .btn_explore {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   color: #FFF;
-  text-decoration: none;
 }
 
 h2 {
@@ -1004,7 +1009,12 @@ h1 {
       -ms-grid-row-align: center;
       align-self: center;
   color: #FFF;
-  text-decoration: none;
+}
+
+.middle:hover .commande {
+  opacity: 1;
+  -webkit-transform: translateY(-5px) scale(1.2);
+          transform: translateY(-5px) scale(1.2);
 }
 
 /*footer*/

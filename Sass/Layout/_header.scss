@@ -55,17 +55,20 @@ body{
  justify-content: center;
  align-items: center;
  border-radius: 20px 20px 20px 20px;
- width:200px;
+ width:250px;
  
  }
 .explore:hover{
   @include gradient;
-  
-}
+ }
+ .middle:hover .explore{
+  opacity:1;
+  transform:translateY(-5px) scale(1.2);
+ }
 .btn_explore{
   align-self: center;
   color: #FFF;
-  text-decoration: none;
+  
 }
 h2{
   padding-left: 20px;
