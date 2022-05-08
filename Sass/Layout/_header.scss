@@ -31,6 +31,9 @@ body{
  background-color: lightgray;
  border-top: 0.5px solid gray;
  }
+ .top{
+   padding-top: 15px;
+ }
  .center{
   display: flex;
   justify-content: center;
@@ -63,7 +66,8 @@ body{
  }
  .middle:hover .explore{
   opacity:1;
-  transform:translateY(-5px) scale(1.2);
+  transform:scale(1.1);
+  transition: transform 500ms ease-in-out;
  }
 .btn_explore{
   align-self: center;
@@ -119,4 +123,7 @@ h2{
   }
 .icone:hover{
   color: $primary;
+}
+.container-loading{
+ 
 }

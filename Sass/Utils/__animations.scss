@@ -1,0 +1,17 @@
+@keyframes loading-disappear{
+ 70%{
+  transform:translateY(0);
+ }
+ 100%{
+  transform: translateY(-100%);
+  display: none;
+ }
+}
+@keyframes appear{
+ 0%{
+  transform:scaleY(0);
+  }
+100%{
+ transform: scaleY(1);
+}
+}

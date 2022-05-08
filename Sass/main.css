@@ -382,6 +382,10 @@ body {
   border-top: 0.5px solid gray;
 }
 
+.top {
+  padding-top: 15px;
+}
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,8 +438,12 @@ body {
 
 .middle:hover .explore {
   opacity: 1;
-  -webkit-transform: translateY(-5px) scale(1.2);
-          transform: translateY(-5px) scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .btn_explore {
@@ -786,6 +794,35 @@ h1 {
   text-align: center;
 }
 
+.food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
+}
+
+@media screen and (min-width: 992px) {
+  .food {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.food {
+  overflow: hidden;
+}
+
 .menu_carte {
   width: 100%;
   border-radius: 40px 40px 0 0;
@@ -1013,8 +1050,12 @@ h1 {
 
 .middle:hover .commande {
   opacity: 1;
-  -webkit-transform: translateY(-5px) scale(1.2);
-          transform: translateY(-5px) scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 /*footer*/
@@ -1066,5 +1107,51 @@ h1 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@-webkit-keyframes loading-disappear {
+  70% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    display: none;
+  }
+}
+
+@keyframes loading-disappear {
+  70% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    display: none;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 /*# sourceMappingURL=main.css.map */
