@@ -499,6 +499,7 @@ h2 {
   margin-left: 15px;
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .btn {
@@ -516,8 +517,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  right: 75px;
+  position: absolute;
+  right: 20rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -530,15 +531,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
 }
 
 .icone {
@@ -808,6 +801,8 @@ h1 {
   margin: 10px;
   -webkit-animation: appear 1s;
           animation: appear 1s;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 
 @media screen and (min-width: 992px) {
@@ -840,28 +835,34 @@ h1 {
   background-color: #f6f6f6;
 }
 
+.heart {
+  position: relative;
+}
+
+.heart > .like {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 25px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.heart:hover .full {
+  opacity: 1;
+  -webkit-transform: translateY(-5px) scale(1.2);
+          transform: translateY(-5px) scale(1.2);
+}
+
 .menu_carte_name {
   font-family: "shrikhand", Impact, sans-serif;
   font-size: 26px;
   font-weight: normal;
   margin-top: 38px;
   margin-bottom: 35px;
-  margin-left: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.flexBetween {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .carte_name_h3 {
@@ -1135,23 +1136,23 @@ h1 {
 
 @-webkit-keyframes appear {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes appear {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=main.css.map */

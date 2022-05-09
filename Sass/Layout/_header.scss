@@ -97,6 +97,7 @@ h2{
  margin-left: 15px;
  border-radius: 20px 20px 20px 20px;
  margin-bottom: 10px;
+ position:relative;
 }
 .btn{
  width: 25px;
@@ -107,15 +108,15 @@ h2{
  display: flex;
  justify-content: center;
  align-items: center;
- position: relative;
- right: 75px;
+ position: absolute;
+ right: 20rem;
  @media screen and (min-width:$tablette){
  right:20px;
 }
  }
 .boxE_texte{
-  @include flexBetween;
-  width:80%;
+  display:flex;
+  width:100%;
 }
  .icone{
   display: flex;
