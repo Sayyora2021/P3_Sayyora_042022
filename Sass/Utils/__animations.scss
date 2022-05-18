@@ -10,21 +10,29 @@
 }
 /*loader index page*/
 .container-loading{
-  $animation-duration: 3s;
+  $animation-duration: 1s;
+  $animation-count:3;
+  position: fixed;
   display:grid;
   place-items: center;
   background-color: #ffffff;
   height:100vh;
-  position:fixed;
   inset:0;
   z-index: 1;
   opacity:0.9;
-  animation: disappear 200ms $animation-duration forwards;
-  animation-delay:6s;
+  animation: disappear 200ms $animation-duration*
+  $animation-count forwards;
+  animation-delay:3s;
   transform-origin: top;
-  color: $primary;
-  i{
-    animation:spin $animation-duration infinite linear;
+  &::after{
+    content: "";
+    height:100px;
+    width:100px;
+    border-right:5px solid transparent $secondary;
+   border-top:5px solid $primary;
+   border-radius: 50%;
+   animation:spin $animation-duration ease-in-out;
+   animation-iteration-count:$animation-count;
   }
  }
 
@@ -41,3 +49,23 @@
     transform:rotate(360deg);
    }
   }
+  @keyframes defi{
+    0%{
+     transform:translateY(150%);
+     opacity: 0;
+     }
+   100%{
+    transform: translateY(1);
+    opacity:0;
+   }
+   }
+   @keyframes defi2{
+    0%{
+     transform:translateY(100%);
+     opacity: 1;
+     }
+   100%{
+    transform: translateY(0);
+    opacity:0;
+   }
+   }
