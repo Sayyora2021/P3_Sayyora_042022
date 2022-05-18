@@ -712,10 +712,6 @@ h1 {
   padding-left: 10px;
 }
 
-.footer a:hover {
-  color: blue;
-}
-
 .footer_titre {
   font-family: "shrikhand";
   color: white;
@@ -850,6 +846,11 @@ h1 {
           animation-fill-mode: both;
 }
 
+/*.food-delay4{
+  animation:appear 4.5s;
+  animation-delay:250ms;
+  animation-fill-mode: both;
+}*/
 .menu_carte {
   width: 100%;
   border-radius: 40px 40px 0 0;
