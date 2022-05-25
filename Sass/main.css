@@ -651,6 +651,17 @@ h1 {
   padding-left: 5%;
 }
 
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
 .flexBetween {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,7 +703,12 @@ h1 {
   -webkit-background-clip: text;
 }
 
-.carte:hover .full {
+.like1 {
+  height: 40px;
+  width: 40px;
+}
+
+.like1:hover .full {
   opacity: 1;
   -webkit-transform: translateY(-5px) scale(1.1);
           transform: translateY(-5px) scale(1.1);
@@ -844,11 +860,15 @@ h1 {
           animation-fill-mode: both;
 }
 
-/*.food-delay4{
-  animation:appear 4.5s;
-  animation-delay:250ms;
-  animation-fill-mode: both;
-}*/
+.food-delay4 {
+  -webkit-animation: appear 4.5s;
+          animation: appear 4.5s;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .menu_carte {
   width: 100%;
   border-radius: 40px 40px 0 0;

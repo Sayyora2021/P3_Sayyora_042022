@@ -63,6 +63,11 @@ h1{
  margin: 0.1px;
  padding-left: 5%;
 }
+.title{
+  display: flex;
+  flex-direction: column;
+  width:80%;
+}
 .flexBetween{
   display: flex;
   justify-content: space-between;
@@ -87,16 +92,13 @@ h1{
   transition: all 200ms ease-in-out;
   -webkit-background-clip: text;
 }
-.carte:hover .full{
+.like1{
+  height: 40px;
+  width:40px;
+}
+.like1:hover .full{
   opacity:1;
   transform:translateY(-5px) scale(1.1);
   transition: all 200ms ease-in-out;
 }
-//carte .fas{
-  //font-size:40px;
- // color:$primary;
- // display:block;
- // background:-webkit-linear-gradient(#FF79DA, #9356DC);
- // -webkit-background-clip: texte;
- // -webkit-text-fill-color: transparent;
-//}
+
