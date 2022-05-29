@@ -451,6 +451,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   color: #FFF;
+  font-weight: normal;
 }
 
 h2 {
