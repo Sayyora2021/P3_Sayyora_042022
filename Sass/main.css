@@ -1127,6 +1127,7 @@ h1 {
       -ms-grid-row-align: center;
       align-self: center;
   color: #FFF;
+  font-weight: normal;
 }
 
 .middle:hover .commande {
