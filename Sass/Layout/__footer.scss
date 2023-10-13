@@ -1,28 +1,32 @@
-.footer{
- width: 100%;
- height: 300px;
- background-color: rgb(38, 32, 32);
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(38, 32, 32);
+  justify-content: center;
 }
-.footer a{
- text-decoration: none;
- color: $white;
- padding-left: 10px;
+.footer a {
+  text-decoration: none;
+  color: $white;
+  padding-left: 10px;
 }
 
-.footer_titre{
-font-family: "shrikhand";
-color: white;
-@include display;
-font-size: 20px;
-padding-top: 20px;
+.footer_titre {
+  font-family: "shrikhand";
+  color: white;
+  @include display;
+  font-size: 20px;
+  padding-top: 20px;
+  justify-content: center;
 }
-.footer_column{
- color: $white;
- @include flexColumn;
- padding-left: 15px;
- padding-top: 10px;
- gap:7px;
+.footer_column {
+  color: $white;
+  @include flexColumn;
+  padding-left: 15px;
+  padding-top: 10px;
+  gap: 7px;
+  text-align: center;
 }
-.display{
- display: flex;
+.display {
+  display: flex;
+  justify-content: center;
 }
